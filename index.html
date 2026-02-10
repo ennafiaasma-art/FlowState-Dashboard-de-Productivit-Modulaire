@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>todo-list</title>
 </head>
-<body>
-    <form >
-        <input type="text" placeholder="creat same thing" id="creat" required>
-        <button id="btn">add list</button>
+
+<body class="bg-black">
+
+                <nav>
+                    <p class="font-bold text-blue-600"> flowstat</p>
+                    </nav>
+
+            
+        
+    </header>
+
+    <h1 class="text-white text-2xl font-bold mb-4 text-center">
+        Today
+    </h1>
+
+
+
+
+    <form>
+        <div class="bg-gray-500 p-11 rounded-xl shadow-lg w-96 inline-block  mx-11 ">
+
+        </div>
+
     </form>
+    <form class="mt-20   mx-40">
+        <div>
+            <input type="text" placeholder="creat same thing .......!" id="creat"
+                class="mx-2 my-11   py-3 border-2 border-blue-500 rounded-t-lg rounded-b-lg px-11 static" required>
+
+        </div>
+        <button id="btn"
+            class=" py-1 px-3 bg-blue-400 hover:bg-blue-600  border-2 border-black text-center  mx-11 rounded-t-lg rounded-b-lg">add
+            list</button>
+
+    </form>
+
+
     <script src="todo.js"></script>
 </body>
+
 </html>
