@@ -1,58 +1,132 @@
-const addBtn = document.getElementById("add");
-const from1 = document.getElementById("form1");
 
-addBtn.onclick= function() {
-    from1.classList.remove('hidden');
-     firstPage.classList.add("hidden");
+
+export const header=()=>{
+    return`
+    <header >
+
+       <nav>
+            <p class="font-bold text-blue-600 text-center"> flowstat</p>
+        </nav>
+
+    </header>`
 };
+export const section1=()=>{
+    return `<section id="premierS"
+         class="min-h-screen 
+                flex flex-col 
+                justify-center items-center 
+                text-center">
 
-// function createTitle() {
-//     const title = document.createElement("h1");
-//     title.textContent = "Reste focus. 25 minutes peuvent tout changer.";
-//     title.className = "font-bold text-pink-500 mb-8";
-//     return title;
-// };
-// function createCircle() {
-//     const circle = document.createElement("div");
-//     circle.className = "rounded-full h-64 w-64 flex items-center justify-center border-4 border-blue-700 mb-8";
+    <h1 class="font-bold text-pink-500 mb-8">
+        Reste focus. 25 minutes peuvent tout changer.
+    </h1>
 
-//     const timer = document.createElement("h2");
-//     timer.textContent = "25:00";
-//     timer.className = "font-bold text-2xl";
+    <!-- Cercle -->
+    <div class="rounded-full h-64 w-64 
+                flex items-center justify-center 
+                border-4 border-blue-700 mb-8">
 
-//     circle.appendChild(timer);
+        <h2 class="font-bold text-2xl">
+        12:23
+        </h2>
 
-//     return circle;
-// }
-// function createCard() {
-//     const card = document.createElement("div");
-//     card.className = "bg-gray-500 p-11 rounded-xl shadow-lg w-80 flex justify-between items-center";
+    </div>
 
-//     const img = document.createElement("img");
-//     img.src = "circle-play-regular-full.svg";
-//     img.width = 16;
+    <!-- Carte -->
+    <form>
+        <div class="bg-gray-500 p-11 rounded-xl shadow-lg 
+                    w-80 flex justify-between items-center">
 
-//     const title = document.createElement("h1");
-//     title.textContent = "learning java";
-//     title.className = "text-white font-bold text-2xl";
+            <img src="circle-play-regular-full.svg" alt="cercle" width="16">
 
-//     const number = document.createElement("p");
-//     number.textContent = "#3";
-//     number.className = "text-white text-2xl";
+            <h1 class="text-white font-bold text-2xl">
+                learning java
+            </h1>
 
-//     card.append(img, title, number);
+            <p class="text-white text-2xl">
+                #3
+            </p>
 
-//     return card;
-// }
-// function createButton() {
-//     const button = document.createElement("button");
-//     button.textContent = "add list";
-//     button.type = "button";
-//     button.id = "add";
-//     button.className = "bg-blue-800 text-white rounded-full py-2 px-9 mt-4";
+        </div>
 
-//     return button;
-// }
+        <br>
+
+        <button type="button"
+                id="add"
+                class="bg-blue-800 text-white rounded-full py-2 px-9">
+            add list
+        </button>
+    </form>
+
+</section>`
+}
+
+ export const section2=()=>{
+
+    return
+    `  <section 
+    id="form1"
+    class="hidden fixed inset-0 z-50  bg-gray-50
+           flex justify-center items-center">
+
+    <!-- Boîte du formulaire -->
+    <div class="bg-gray-500 p-11 rounded-xl shadow-lg 
+                w-[90%] lg:w-[50%]">
+
+        <h2 class="font-bold text-pink-500 text-center">
+            Chaque minute compte. Allons-y !
+        </h2>
+
+        <br>
+
+        <form>
+
+            <div class="py-4">
+                <label class="text-white">
+                    Name :
+                    <input type="text"
+                           placeholder="entrer un nom"
+                           class="border-2 border-black px-4 py-2 rounded-full text-black w-full">
+                </label>
+            </div>
+
+            <div class="py-4">
+                <label class="text-white">
+                    Add list :
+                    <input type="text"
+                           placeholder="create something"
+                           class="border-2 border-black px-4 py-2 rounded-full text-black w-full">
+                </label>
+            </div>
+
+            <div class="py-4">
+                <label class="text-white">
+                    Number of round :
+                    <input type="number"
+                           placeholder="create number"
+                           class="border-2 border-black px-4 py-2 rounded-full text-black w-full">
+                </label>
+            </div>
+
+            <div class="flex justify-between py-6">
+
+                <button type="button"
+                        class="bg-gray-700 text-white rounded-full py-1 px-4">
+                    delete
+                </button>
+
+                <button type="submit"
+                        class="bg-blue-800 text-white rounded-full py-1 px-4">
+                    save
+                </button>
+
+            </div>
+
+        </form>
+    </div>
+</section>
+`
+}
 
 
 

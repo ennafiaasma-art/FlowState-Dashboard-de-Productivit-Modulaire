@@ -1,12 +1,15 @@
-function getTasks() {
-    return JSON.parse(localStorage.getItem("tasks")) || []
-}
-function setTasks(tasks) {
-    localStorage.setItem("tasks", JSON.stringify(tasks))
-}
+export const getTasks=()=>{
+    return
+     JSON.parse(localStorage.getItem("tasks")) ||[]
+};
 
-const tasks = [{name:"reply to emails", sessions:1,logo:"images/blog-1.jpg",isActive:false,terminated:false},
-               {name:"organize work space", sessions:1,logo:"images/blog-1.jpg",isActive:false,terminated:false},
-               {name:"fix code errors", sessions:2,logo:"images/blog-1.jpg",isActive:false,terminated:false}
-]
+export const setTasks=(tasks)=> {
+    return
+   localStorage.setItem("tasks",JSON.stringify(tasks))
+} 
+
+const tasks = [{ logo:"images/blog-1.jpg",name:"reply to emails", sessions:1},
+               { logo:"images/blog-1.jpg",name:"organize work space", sessions:1},
+               { logo:"images/blog-1.jpg",name:"fix code errors", sessions:2}]
+
 
