@@ -1,8 +1,7 @@
 
 
 export const header=()=>{
-    return`
-    <header >
+    return`<header >
 
        <nav>
             <p class="font-bold text-blue-600 text-center"> flowstat</p>
@@ -12,7 +11,7 @@ export const header=()=>{
     </header>`
 };
 export const ajouteEtTime=()=>{
-    return `<section id="premierS"
+    return`<section id="premierS"
          class="min-h-screen 
                 flex flex-col 
                 justify-center items-center 
@@ -53,7 +52,7 @@ export const ajouteEtTime=()=>{
         <br>
 
         <button type="button"
-                id="add"
+                id="btnadd"
                 class="bg-blue-800 text-white rounded-full py-2 px-9">
             add list
         </button>
@@ -63,12 +62,10 @@ export const ajouteEtTime=()=>{
 }
 
  export const AddFormulaire=()=>{
-
-    return
-    `  <section 
+    return`<section 
     id="form1"
-    class="hidden fixed inset-0 z-50  bg-gray-50
-           flex justify-center items-center">
+    class="fixed inset-0 z-50  bg-gray-50
+           flex justify-center items-center  hidden">
 
     <!-- Boîte du formulaire -->
     <div class="bg-gray-500 p-11 rounded-xl shadow-lg 
@@ -126,8 +123,7 @@ export const ajouteEtTime=()=>{
         </form>
     </div>
 </section>
-`
-}
+`}
 
 
 
