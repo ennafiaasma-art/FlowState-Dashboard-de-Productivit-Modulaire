@@ -10,7 +10,7 @@ export const header=()=>{
 
     </header>`
 };
-export const section1=()=>{
+export const ajouteEtTime=()=>{
     return `<section id="premierS"
          class="min-h-screen 
                 flex flex-col 
@@ -61,7 +61,7 @@ export const section1=()=>{
 </section>`
 }
 
- export const section2=()=>{
+ export const AddFormulaire=()=>{
 
     return
     `  <section 
