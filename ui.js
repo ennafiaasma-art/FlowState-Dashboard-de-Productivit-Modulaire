@@ -6,6 +6,7 @@ export const header=()=>{
 
        <nav>
             <p class="font-bold text-blue-600 text-center"> flowstat</p>
+            <h1>Hello</h1>
         </nav>
 
     </header>`
