@@ -14,9 +14,9 @@ form.addEventListener("submit",(e)=>{
     e.preventDefault()
     let tasksList = addTask(tasks,inputTask)
     storeTask(tasksList); //stockage dans local storage
+   
 
     }
  )
-
 
 

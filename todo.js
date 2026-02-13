@@ -1,7 +1,7 @@
 
   
   
-//   const form=document.getElementById("forinput");
+const listTasks=document.getElementById("container");
 //   let btnsave=document.getElementById("btnsave");
 //   let inputTask = document.getElementById('addTask');
  
@@ -24,26 +24,20 @@ export function addTask(tab , taskName) {
 //                { logo:"circle-play-regular-full.svg-1.jpg",name:"fix code errors", sessions:2}]
 
 
-// export function afficheFormailure(){
-//     form.innerHTML="";
-//     array.forEach=(el)=>{
-//         .innerHTML=`
-// <div class="bg-gray-500 p-11 rounded-xl shadow-lg 
-//                     w-80 flex justify-between items-center">
+export function afficheFormailure(tab){
+    listTasks.innerHTML="";
+    tab.forEach=(el)=>{
+        listTasks.innerHTML=`
+<div class="bg-gray-500 p-11 rounded-xl shadow-lg 
+                    w-80 flex justify-between items-center">
 
-            
+            <h2>${el.name}</h2>
+        </div>
+        `
 
-            
-
-           
-//         </div>
-
-
-        
-//         `
-
-// console.log(data);
-//     }
+console.log(data);
+    }
+}
 
 
 

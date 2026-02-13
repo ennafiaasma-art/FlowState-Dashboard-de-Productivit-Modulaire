@@ -11,7 +11,7 @@
 export function storeTask(task) {
     localStorage.setItem('data', JSON.stringify(task));
 }
-export function getTask(task) {
+export function getTask() {
   return JSON.parse(localStorage.getItem('data'));
 }
 
