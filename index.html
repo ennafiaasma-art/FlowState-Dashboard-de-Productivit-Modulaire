@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo-list</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body>
-     <div id="container">
-         <div ></div>
+
+    <section class="fixed inset-0 z-50  bg-gray-50
+           flex justify-center items-center ">
+
+        <!-- Boîte du formulaire -->
+        <div class="bg-gray-500 p-11 rounded-xl shadow-lg 
+                w-[90%] lg:w-[50%]">
+
+            <h2 class="font-bold text-pink-500 text-center">
+                Chaque minute compte. Allons-y !
+            </h2>
+
+            <br>
+
+            <form  id="form1">
+
+                <div class="py-4 ">
+                    <label class="text-white">
+                        Add list :
+                        <input id="addTask" type="text" placeholder="create something"
+                            class="border-2 border-black px-4 py-2 rounded-full text-black w-full">
+
+                    </label>
+
+                </div>
+
+
+
+
+                <div class="flex justify-between py-6">
+
+                    <button type="button" class="bg-gray-700 text-white rounded-full py-1 px-4">
+                        delete
+                    </button>
+
+                    <button id="btnsave" type="submit" class="bg-blue-800 text-white rounded-full py-1 px-4">
+                        save
+                    </button>
+
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <div id="container">
+        <div></div>
     </div>
     <div id="newform"></div>
-<script type="module" src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
+
 </html>

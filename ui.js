@@ -65,7 +65,7 @@ export const ajouteEtTime=()=>{
     return`<section 
     id="form1"
     class="fixed inset-0 z-50  bg-gray-50
-           flex justify-center items-center  hidden">
+           flex justify-center items-center ">
 
     <!-- Boîte du formulaire -->
     <div class="bg-gray-500 p-11 rounded-xl shadow-lg 

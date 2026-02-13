@@ -1,19 +1,22 @@
-import { AddFormulaire } from "./ui"
 
   
   
-  const form=document.getElementById("forinput");
-  let btnsave=document.getElementById("btnsave");
-  let addTask = document.getElementById('addTask');
+//   const form=document.getElementById("forinput");
+//   let btnsave=document.getElementById("btnsave");
+//   let inputTask = document.getElementById('addTask');
  
-    let array = [];
+//     let array = [];
 
- btnsave.onclick = function() {
-    let objet = {
-        input : addTask.value,
+export function addTask(tab , taskName) {
+   
+    let task = {
+        name : taskName.value,
     }
-    array.push(objet);
-    console.log(array);
+    tab.push(task);
+    console.log(tab);
+    return tab
+    
+
     //  afficheFormailure();
 }
 //   const data = [{ logo:"circle-play-regular-full.svg",name:"reply to emails", sessions:1},
