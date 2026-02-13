@@ -4,8 +4,8 @@ export const header=()=>{
     return`<header >
 
        <nav>
-            <p class="font-bold text-blue-600 text-center"> flowstat</p>
-            <h1>Hello</h1>
+            <p class="font-bold text-blue-600 text-center text-3xl"> flowstat</p>
+          
         </nav>
 
     </header>`
@@ -17,7 +17,7 @@ export const ajouteEtTime=()=>{
                 justify-center items-center 
                 text-center">
 
-    <h1 class="font-bold text-pink-500 mb-8">
+    <h1 class="font-bold text-pink-500 mb-8 text-2xl">
         Reste focus. 25 minutes peuvent tout changer.
     </h1>
 
@@ -54,7 +54,7 @@ export const ajouteEtTime=()=>{
         <button type="button"
                 id="btnadd"
                 class="bg-blue-800 text-white rounded-full py-2 px-9">
-            add list
+            add task
         </button>
     </form>
 
@@ -78,33 +78,24 @@ export const ajouteEtTime=()=>{
         <br>
 
         <form>
+        
 
-            <div class="py-4">
-                <label class="text-white">
-                    Name :
-                    <input type="text"
-                           placeholder="entrer un nom"
-                           class="border-2 border-black px-4 py-2 rounded-full text-black w-full">
-                </label>
-            </div>
+           
 
-            <div class="py-4">
+            <div class="py-4 " >
                 <label class="text-white">
                     Add list :
-                    <input type="text"
+                    <input id = "addTask" type="text"
                            placeholder="create something"
+                           
                            class="border-2 border-black px-4 py-2 rounded-full text-black w-full">
-                </label>
+                
+                           </label>
+
             </div>
 
-            <div class="py-4">
-                <label class="text-white">
-                    Number of round :
-                    <input type="number"
-                           placeholder="create number"
-                           class="border-2 border-black px-4 py-2 rounded-full text-black w-full">
-                </label>
-            </div>
+            
+           
 
             <div class="flex justify-between py-6">
 
@@ -113,8 +104,8 @@ export const ajouteEtTime=()=>{
                     delete
                 </button>
 
-                <button type="submit"
-                        class="bg-blue-800 text-white rounded-full py-1 px-4">
+                <button id="btnsave" type="submit"
+                        class="bg-blue-800 text-white rounded-full py-1 px-4" >
                     save
                 </button>
 
